@@ -39,4 +39,33 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+//nav
+let navItem1 = document.querySelectorAll("a")
+navItem1[0].textContent = "Services"
+navItem1[1].textContent = "Product"
+navItem1[2].textContent = "Vision"
+navItem1[3].textContent = "Features"
+navItem1[4].textContent = "About"
+navItem1[5].textContent = "Contact"
+
+//cta
+let header1 = document.querySelector("h1").textContent = "DOM Is awesome";
+let buttons = document.querySelector("button").textContent = "Get started";
+let codeImage = document.querySelector("#cta-img").src = "img/header-img.png"
+
+//main content
+
+
+//contact
+let contactInfo = document.querySelector(".contact h4").textContent = "Contact"
+let addressInfo = document.querySelectorAll(".contact p")
+addressInfo[0].textContent = "123 Way 456 Street Somewhere, USA";
+addressInfo[1].textContent = "1 (888) 888-8888"
+addressInfo[2].textContent = "sales@greatidea.io"
+
+//footer
+let copyright = document.querySelector("footer p").textContent = "Copyright Great Idea! 2018"
+
+
