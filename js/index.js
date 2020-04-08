@@ -42,13 +42,21 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 //nav
-let navItem1 = document.querySelectorAll("a")
-navItem1[0].textContent = "Services"
-navItem1[1].textContent = "Product"
-navItem1[2].textContent = "Vision"
-navItem1[3].textContent = "Features"
-navItem1[4].textContent = "About"
-navItem1[5].textContent = "Contact"
+let navText = ['Services', 'Product', 'Vision', 'Features', 'About', 'Contact']
+
+//had this part at the beginning
+let navItems = document.querySelectorAll("a")
+
+navText.forEach((texts, i)=>{
+  navItems[i].textContent = texts;
+});
+//not going to delete this, as this was also another way of doing it
+// navItems[0].textContent = "Services"
+// navItems[1].textContent = "Product"
+// navItems[2].textContent = "Vision"
+// navItems[3].textContent = "Features"
+// navItems[4].textContent = "About"
+// navItems[5].textContent = "Contact"
 
 //cta
 let header1 = document.querySelector("h1").textContent = "DOM Is awesome";
@@ -57,13 +65,20 @@ let codeImage = document.querySelector("#cta-img").src = "img/header-img.png"
 
 //main content
 
-
 //contact
-let contactInfo = document.querySelector(".contact h4").textContent = "Contact"
+let contacts = document.querySelector(".contact h4").textContent = "Contact"
+
+let contactInfo = ["123 Way 456 Street Somewhere, USA", "1 (888) 888-8888", "sales@greatidea.io"]
 let addressInfo = document.querySelectorAll(".contact p")
-addressInfo[0].textContent = "123 Way 456 Street Somewhere, USA";
-addressInfo[1].textContent = "1 (888) 888-8888"
-addressInfo[2].textContent = "sales@greatidea.io"
+
+contactInfo.forEach((info, i)=>{
+  addressInfo[i].textContent = info;
+})
+
+//longer way of doing things...
+// addressInfo[0].textContent = "123 Way 456 Street Somewhere, USA";
+// addressInfo[1].textContent = "1 (888) 888-8888"
+// addressInfo[2].textContent = "sales@greatidea.io"
 
 //footer
 let copyright = document.querySelector("footer p").textContent = "Copyright Great Idea! 2018"
