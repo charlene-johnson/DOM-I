@@ -61,6 +61,7 @@ let navText = ["Services", "Product", "Vision", "Features", "About","Contact"];
 navText.forEach((texts, i)=>{
   navItems[i].textContent = texts;
   navItems[i].style.color = "green"
+  navItems[i].style.fontSize = "20px"
 })
 let navs = document.createElement("a")
 navs.style.color = "green";
@@ -68,12 +69,16 @@ let navs2 = document.createElement("a")
 navs2.style.color = "green";
 let navBar = document.querySelector("nav");
 navs.textContent = "Bananas";
+navs.style.fontSize = "20px"
 navs2.textContent = "Apples";
+navs2.style.fontSize = "20px"
 navBar.append(navs);
 navBar.prepend(navs2);
 //Cta
 header1.innerHTML = "DOM <br> Is <br> Awesome";
+header1.style.color = "limegreen";
 buttons.textContent = siteContent["cta"]["button"]
+buttons.style.color = "limegreen"
 codeImage.src = siteContent["cta"]["img-src"]
 
 //Main Content
@@ -81,9 +86,14 @@ codeImage.src = siteContent["cta"]["img-src"]
 let topHeadings = ["Features", "About"];
 topHeadings.forEach((headings, i)=>{
   textHeadings[i].textContent = headings;
+  textHeadings[i].style.color = "limegreen"
 })
 topParagraphs[0].textContent = siteContent["main-content"]["features-content"];
+topParagraphs[0].style.fontFamily = "Monaco"
+topParagraphs[0].style.fontSize = "13px"
 topParagraphs[1].textContent = siteContent["main-content"]["about-content"];
+topParagraphs[1].style.fontFamily = "Monaco"
+topParagraphs[1].style.fontSize = "13px"
 
   //Mid Content
 midImage.src = siteContent["main-content"]["middle-img-src"];
@@ -92,6 +102,7 @@ midImage.src = siteContent["main-content"]["middle-img-src"];
 let bottomHeadings = ["Services", "Product", "Vision"];
 bottomHeadings.forEach((headings, i)=>{
   bottomTextHeadings[i].textContent = headings;
+  bottomTextHeadings[i].style.color = "limegreen"
 })
 bottomParagraphs[0].textContent = siteContent["main-content"]["services-content"];
 bottomParagraphs[1].textContent = siteContent["main-content"]["product-content"];
@@ -99,6 +110,7 @@ bottomParagraphs[2].textContent = siteContent["main-content"]["vision-content"];
 
 //Contact
 contacts.textContent = siteContent["contact"]["contact-h4"];
+contacts.style.color = "limegreen"
 addressInfo[0].innerHTML  = "123 Way 456 Street<br> Somewhere, USA";
 addressInfo[1].textContent = siteContent["contact"]["phone"];
 addressInfo[2].textContent = siteContent["contact"]["email"];
