@@ -105,15 +105,29 @@ bottomHeadings.forEach((headings, i)=>{
   bottomTextHeadings[i].style.color = "limegreen"
 })
 bottomParagraphs[0].textContent = siteContent["main-content"]["services-content"];
+bottomParagraphs[0].style.fontFamily = "Monaco"
+bottomParagraphs[0].style.fontSize = "13px"
 bottomParagraphs[1].textContent = siteContent["main-content"]["product-content"];
+bottomParagraphs[1].style.fontFamily = "Monaco"
+bottomParagraphs[1].style.fontSize = "13px"
 bottomParagraphs[2].textContent = siteContent["main-content"]["vision-content"];
+bottomParagraphs[2].style.fontFamily = "Monaco"
+bottomParagraphs[2].style.fontSize = "13px"
 
 //Contact
 contacts.textContent = siteContent["contact"]["contact-h4"];
 contacts.style.color = "limegreen"
 addressInfo[0].innerHTML  = "123 Way 456 Street<br> Somewhere, USA";
+addressInfo[0].style.fontFamily = "Monaco"
+addressInfo[0].style.fontSize = "13px"
 addressInfo[1].textContent = siteContent["contact"]["phone"];
+addressInfo[1].style.fontFamily = "Monaco"
+addressInfo[1].style.fontSize = "13px"
 addressInfo[2].textContent = siteContent["contact"]["email"];
+addressInfo[2].style.fontFamily = "Monaco"
+addressInfo[2].style.fontSize = "13px"
 
 //Footer
 copyright.textContent = siteContent["footer"]["copyright"];
+copyright.style.fontFamily = "Monaco"
+copyright.style.fontSize = "12px"
