@@ -41,46 +41,16 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-//nav
-let navText = ['Services', 'Product', 'Vision', 'Features', 'About', 'Contact']
+// Declared Variables
 
-//had this part at the beginning
-let navItems = document.querySelectorAll("a")
-
-navText.forEach((texts, i)=>{
-  navItems[i].textContent = texts;
-});
-//not going to delete this, as this was also another way of doing it
-// navItems[0].textContent = "Services"
-// navItems[1].textContent = "Product"
-// navItems[2].textContent = "Vision"
-// navItems[3].textContent = "Features"
-// navItems[4].textContent = "About"
-// navItems[5].textContent = "Contact"
-
-//cta
-let header1 = document.querySelector("h1").textContent = "DOM Is awesome";
-let buttons = document.querySelector("button").textContent = "Get started";
-let codeImage = document.querySelector("#cta-img").src = "img/header-img.png"
-
-//main content
-
-//contact
-let contacts = document.querySelector(".contact h4").textContent = "Contact"
-
-let contactInfo = ["123 Way 456 Street Somewhere, USA", "1 (888) 888-8888", "sales@greatidea.io"]
+let navItems = document.querySelectorAll("a");
+let header1 = document.querySelector("h1");
+let buttons = document.querySelector("button");
+let codeImage = document.querySelector("#cta-img");
+let textHeadings = document.querySelectorAll(".top-content h4");
+let topParagraphs = document.querySelectorAll(".top-content p");
+let midImage = document.querySelector("#middle-img")
+let bottomTextHeadings = document.querySelectorAll(".bottom-content h4")
+let contacts = document.querySelector(".contact h4")
 let addressInfo = document.querySelectorAll(".contact p")
-
-contactInfo.forEach((info, i)=>{
-  addressInfo[i].textContent = info;
-})
-
-//longer way of doing things...
-// addressInfo[0].textContent = "123 Way 456 Street Somewhere, USA";
-// addressInfo[1].textContent = "1 (888) 888-8888"
-// addressInfo[2].textContent = "sales@greatidea.io"
-
-//footer
-let copyright = document.querySelector("footer p").textContent = "Copyright Great Idea! 2018"
-
-
+let copyright = document.querySelector("footer p")
