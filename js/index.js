@@ -51,6 +51,47 @@ let textHeadings = document.querySelectorAll(".top-content h4");
 let topParagraphs = document.querySelectorAll(".top-content p");
 let midImage = document.querySelector("#middle-img")
 let bottomTextHeadings = document.querySelectorAll(".bottom-content h4")
+let bottomParagraphs = document.querySelectorAll(".bottom-content p");
 let contacts = document.querySelector(".contact h4")
 let addressInfo = document.querySelectorAll(".contact p")
 let copyright = document.querySelector("footer p")
+
+// Nav
+let navText = ["Services", "Product", "Vision", "Features", "About","Contact"];
+navText.forEach((texts, i)=>{
+  navItems[i].textContent = texts;
+})
+
+//Cta
+header1.innerHTML = "DOM <br> Is <br> Awesome";
+buttons.textContent = siteContent["cta"]["button"]
+codeImage.src = siteContent["cta"]["img-src"]
+
+//Main Content
+  //Top Content
+let topHeadings = ["Features", "About"];
+topHeadings.forEach((headings, i)=>{
+  textHeadings[i].textContent = headings;
+})
+topParagraphs[0].textContent = siteContent["main-content"]["features-content"];
+topParagraphs[1].textContent = siteContent["main-content"]["about-content"];
+
+  //Mid Content
+midImage.src = siteContent["main-content"]["middle-img-src"];
+
+  //Bottom Content
+let bottomHeadings = ["Services", "Product", "Vision"];
+bottomHeadings.forEach((headings, i)=>{
+  bottomTextHeadings[i].textContent = headings;
+})
+bottomParagraphs[0].textContent = siteContent["main-content"]["services-content"];
+bottomParagraphs[1].textContent = siteContent["main-content"]["product-content"];
+bottomParagraphs[2].textContent = siteContent["main-content"]["vision-content"];
+//Contact
+contacts.textContent = siteContent["contact"]["contact-h4"];
+addressInfo[0].innerHTML  = "123 Way 456 Street<br> Somewhere, USA";
+addressInfo[1].textContent = siteContent["contact"]["phone"];
+addressInfo[2].textContent = siteContent["contact"]["email"];
+
+//Footer
+copyright.textContent = siteContent["footer"]["copyright"];
