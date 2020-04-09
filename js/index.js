@@ -60,8 +60,17 @@ let copyright = document.querySelector("footer p")
 let navText = ["Services", "Product", "Vision", "Features", "About","Contact"];
 navText.forEach((texts, i)=>{
   navItems[i].textContent = texts;
+  navItems[i].style.color = "green"
 })
-
+let navs = document.createElement("a")
+navs.style.color = "green";
+let navs2 = document.createElement("a")
+navs2.style.color = "green";
+let navBar = document.querySelector("nav");
+navs.textContent = "Bananas";
+navs2.textContent = "Apples";
+navBar.append(navs);
+navBar.prepend(navs2);
 //Cta
 header1.innerHTML = "DOM <br> Is <br> Awesome";
 buttons.textContent = siteContent["cta"]["button"]
@@ -87,6 +96,7 @@ bottomHeadings.forEach((headings, i)=>{
 bottomParagraphs[0].textContent = siteContent["main-content"]["services-content"];
 bottomParagraphs[1].textContent = siteContent["main-content"]["product-content"];
 bottomParagraphs[2].textContent = siteContent["main-content"]["vision-content"];
+
 //Contact
 contacts.textContent = siteContent["contact"]["contact-h4"];
 addressInfo[0].innerHTML  = "123 Way 456 Street<br> Somewhere, USA";
